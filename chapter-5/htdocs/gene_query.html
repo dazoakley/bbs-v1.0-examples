@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Basic Web Form</title>
+    </head>
+    <body>
+        <h1>Basic Web Form Example</h1>
+        <p>
+            Please enter a gene name and click 'Search' to get a 
+            report of information for a gene.
+        </p>
+        <p>
+            (If you are at loss for a something to search for, 
+	    try 'NAD%' or 'ATP%').
+        </p>
+        <form action="/cgi-bin/form_gene_query.pl" method="get">
+            <p>
+                <label for="gene">Gene: </label>
+                <input type="text" name="gene" size="15" />
+                <input type="submit" value="Search" />
+                <input type="reset" value="Clear" />
+            </p>
+        </form>
+    </body>
+</html>
+
